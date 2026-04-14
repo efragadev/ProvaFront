@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang='pt-br'>
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Controle de Gastos</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="app">
         <header class="hero">
-            <div class="hero-content">
-                <p class="hero-eyebrow">MVP de finanças pessoais</p>
-                <h1>Controle seus gastos do mês</h1>
-                <p class="hero-descricao">
-                    Cadastre despesas do dia a dia, acompanhe o total gasto e organize suas informações em uma única tela.
+            <div class="hero__content">
+                <p class="hero__eyebrow">MVP de financas pessoais</p>
+                <h1>Controle seus gastos do mes</h1>
+                <p class="hero__description">
+                    Cadastre despesas do dia a dia, acompanhe o total gasto e organize suas
+                    informacoes em uma unica tela.
                 </p>
             </div>
 
-           <section class="summary-card" aria-label="Resumo financeiro">
+            <section class="summary-card" aria-label="Resumo financeiro">
                 <span class="summary-card__label">Total gasto no mes</span>
                 <strong class="summary-card__value" id="total-value">R$ 0,00</strong>
                 <span class="summary-card__info" id="expense-count">0 gastos cadastrados</span>
             </section>
         </header>
 
-        <section class="panel"> 
+        <section class="panel">
             <div class="section-heading">
                 <div>
                     <h2>Adicionar gasto</h2>
@@ -88,7 +89,7 @@
                 <p class="form-message" id="form-message" aria-live="polite">
                     Preencha os campos para registrar uma despesa.
                 </p>
-            </form> 
+            </form>
         </section>
 
         <section class="panel">
@@ -118,10 +119,7 @@
                 </table>
             </div>
         </section>
-
     </main>
-
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
