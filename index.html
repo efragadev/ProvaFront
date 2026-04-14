@@ -91,7 +91,34 @@
             </form> 
         </section>
 
-        
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <h2>Lista de gastos</h2>
+                    <p>Clique em uma linha para editar ou use o botao de exclusao.</p>
+                </div>
+                <span class="highlight-badge">Destaque automatico acima de R$ 100,00</span>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="expense-table">
+                    <thead>
+                        <tr>
+                            <th>Descricao</th>
+                            <th>Categoria</th>
+                            <th>Valor</th>
+                            <th>Acoes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-list">
+                        <tr class="empty-row">
+                            <td colspan="4">Nenhum gasto cadastrado ainda.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
     </main>
 
 
