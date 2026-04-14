@@ -8,7 +8,90 @@
 </head>
 <body>
     <main class="app">
-    
+        <header class="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow">MVP de finanças pessoais</p>
+                <h1>Controle seus gastos do mês</h1>
+                <p class="hero-descricao">
+                    Cadastre despesas do dia a dia, acompanhe o total gasto e organize suas informações em uma única tela.
+                </p>
+            </div>
+
+           <section class="summary-card" aria-label="Resumo financeiro">
+                <span class="summary-card__label">Total gasto no mes</span>
+                <strong class="summary-card__value" id="total-value">R$ 0,00</strong>
+                <span class="summary-card__info" id="expense-count">0 gastos cadastrados</span>
+            </section>
+        </header>
+
+        <section class="panel"> 
+            <div class="section-heading">
+                <div>
+                    <h2>Adicionar gasto</h2>
+                    <p>Preencha o formulario para registrar uma nova despesa.</p>
+                </div>
+            </div>
+
+            <form id="expense-form" class="expense-form">
+                <div class="form-group">
+                    <label for="description">Descricao</label>
+                    <input
+                        type="text"
+                        id="description"
+                        name="description"
+                        placeholder="Ex: Almoco"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Valor</label>
+                    <input
+                        type="number"
+                        id="amount"
+                        name="amount"
+                        placeholder="Ex: 25.50"
+                        min="0.01"
+                        step="0.01"
+                        required
+                    >
+                </div>
+
+                <div class="form-group form-group--full">
+                    <label for="category">Categoria</label>
+                    <select id="category" name="category" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="Alimentacao">Alimentacao</option>
+                        <option value="Transporte">Transporte</option>
+                        <option value="Moradia">Moradia</option>
+                        <option value="Lazer">Lazer</option>
+                        <option value="Saude">Saude</option>
+                        <option value="Educacao">Educacao</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="form-actions form-group--full">
+                    <button type="submit" class="button button--primary" id="submit-button">
+                        Adicionar gasto
+                    </button>
+                    <button
+                        type="button"
+                        class="button button--secondary"
+                        id="cancel-edit-button"
+                        hidden
+                    >
+                        Cancelar edicao
+                    </button>
+                </div>
+
+                <p class="form-message" id="form-message" aria-live="polite">
+                    Preencha os campos para registrar uma despesa.
+                </p>
+            </form> 
+        </section>
+
+        
     </main>
 
 
