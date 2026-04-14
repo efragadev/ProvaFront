@@ -1,4 +1,4 @@
-# Controle de Gastos
+# Prova Front - Controle de Gastos
 
 Projeto desenvolvido como MVP de uma aplicacao web de financas pessoais para a avaliacao pratica de Programacao Front-end.
 
@@ -38,6 +38,3 @@ O projeto foi construido para atender aos requisitos da prova:
 - destaque visual para valores altos
 - edicao de gastos
 
-## Autor
-
-Projeto desenvolvido por Eduardo para a avaliacao do 1o bimestre de Programacao Front-end.
